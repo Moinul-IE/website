@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand fs-1" href="#"><i>Next-Food</i></a>
+          
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Rice-Curry</a></li>
+                  <li><a class="dropdown-item" href="#">Fast-Food</a></li>
+                  <li><a class="dropdown-item" href="#">Beverage</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Location</a>
+              </li>
+            </ul>
+            <!-- search -->
+
+            <form class="">
+                <div class="input-group">
+                  
+                  <input type="text" class="form-control  border-success" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                  <span class="input-group-text test-white btn btn-success border-success" id="basic-addon1"><i class="fas fa-search"></i></span>
+                </div>
+              </form>
+              <!-- log in -->
+              <button class="mx-1 log"  data-bs-toggle="modal" data-bs-target="#examplemodal">Login</button>
+
+          </div>
+        </div>
+      </nav>
+
+
+     
+
+     <!-- slides -->
+    <div class="container mt-2">
+     
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="col-md-12 p-0">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imges/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./imges/img 2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./imges/img3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+            
+          </div>
+
+          
+     <!-- create profiles  -->  
+
+
+
+     <div class="row row-cols-1 row-cols-md-3 mt-3 g-2">
+
+      <!-- col 1  -->
+
+      <div class="col-md-12 text-center text-dark fs-1 ">
+        ITEM
+      </div>
+     
+      <div class="col">
+        <div class="card">
+          <div class="card-header h2 ">
+            Vegetable Rice 
+          </div>
+          <div class="card-body">
+            <img src="./imges/srk.jpg" alt="" class="card-img">
+            <!-- how to create list-group in card  -->
+
+            <div class="card-footer text-center">
+              <P><b>Price 12rm</b></P>
+            </div>
+
+          <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+          </div>
+          
+        
+        </div>
+        
+      </div>
+     
+
+     <!-- col-2 -->
+     
+     <div class="col">
+      <div class="card">
+        <div class="card-header h2 ">
+          Chiken-Rice 
+        </div>
+        <div class="card-body">
+          <img src="./imges/chiken rice.jpg" alt="" class="card-img">
+          <!-- how to create list-group in card  -->
+
+          <div class="card-footer text-center">
+            <P><b>Price 15rm</b></P>
+          </div>
+
+        <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+        </div>
+        
+      
+      </div>
+      
+    </div>
+    
+
+     <!-- col-3 -->
+
+     
+     <div class="col">
+      <div class="card">
+        <div class="card-header h2 ">
+          Beef-Rice
+        </div>
+        <div class="card-body">
+          <img src="./imges/beef.jpg" alt="" class="card-img">
+          <!-- how to create list-group in card  -->
+
+          <div class="card-footer text-center">
+            <P><b>Price 20rm</b></P>
+          </div>
+
+        <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+        </div>
+        
+      
+      </div>
+      
+    </div>
+
+     </div>
+
+     
+
+      
+  <!-- row number 2  -->
+  <div class="row row-cols-1 row-cols-md-3 mt-3 g-2">
+
+    <!-- col 4  -->
+
+   
+   
+    <div class="col">
+      <div class="card">
+        <div class="card-header h2 ">
+          Briyani Chicken
+        </div>
+        <div class="card-body">
+          <img src="./imges/briyani.jpg" alt="" class="card-img">
+          <!-- how to create list-group in card  -->
+
+          <div class="card-footer text-center">
+            <P><b>Price 20rm</b></P>
+          </div>
+
+        <button class="btn btn-dark text-whit btn-outline-primary mt-1" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+        </div>
+        
+      
+      </div>
+      
+    </div>
+   
+
+   <!-- col-5 -->
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+        Hyderabad-Briyani
+      </div>
+      <div class="card-body">
+        <img src="./imges/hyderabad briyani.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 25rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+  
+
+   <!-- col-6 -->
+
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+        Beef-Briyani
+      </div>
+      <div class="card-body">
+        <img src="./imges/beef briyani.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 20rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+
+   </div>
+
+   <!-- row number 3 -->
+   <div class="row row-cols-1 row-cols-md-3 mt-3 g-2">
+
+    <!-- col 1  -->
+
+    <div class="col-md-12 text-center text-dark fs-1 ">
+      Fast-Food
+    </div>
+   
+    <div class="col">
+      <div class="card">
+        <div class="card-header h2 ">
+          Burger
+        </div>
+        <div class="card-body">
+          <img src="./imges/burger.jpg" alt="" class="card-img">
+          <!-- how to create list-group in card  -->
+
+          <div class="card-footer text-center">
+            <P><b>Price 15rm</b></P>
+          </div>
+
+        <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+        </div>
+        
+      
+      </div>
+      
+    </div>
+   
+
+   <!-- col-2 -->
+   
+   <div class="col">
+    <div class="card ">
+      <div class="card-header h2 ">
+        Chicken-Nuggte
+      </div>
+      <div class="card-body">
+        <img src="./imges/chicken nuggets.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 18rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+  
+
+   <!-- col-3 -->
+
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+        Chicken-Fridge
+      </div>
+      <div class="card-body">
+        <img src="./imges/chicken fridge.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 20rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+
+   </div>
+
+  <!-- row number 4 -->
+   <div class="row row-cols-1 row-cols-md-3 mt-3 g-2">
+
+    <!-- col 1  -->
+
+    <div class="col-md-12 text-center text-dark fs-1 ">
+      
+    </div>
+   
+    <div class="col">
+      <div class="card">
+        <div class="card-header h2 ">
+          Noodles 
+        </div>
+        <div class="card-body">
+          <img src="./imges/noodles.jpg" alt="" class="card-img">
+          <!-- how to create list-group in card  -->
+
+          <div class="card-footer text-center">
+            <P><b>Price 8rm</b></P>
+          </div>
+
+        <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+        </div>
+        
+      
+      </div>
+      
+    </div>
+   
+
+   <!-- col-2 -->
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+        French Fry
+      </div>
+      <div class="card-body">
+        <img src="./imges/french fry.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 14rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+  
+
+   <!-- col-3 -->
+
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+        Onion Ring
+      </div>
+      <div class="card-body">
+        <img src="./imges/onion ring.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 16rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+
+   </div>
+
+  <!-- row number 5 -->
+
+  <div class="row row-cols-1 row-cols-md-3 mt-3 g-2">
+
+    <!-- col 1  -->
+
+    <div class="col-md-12 text-center text-dark fs-1 ">
+      Beverage
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header h2 ">
+          7up
+        </div>
+        <div class="card-body">
+          <img src="./imges/7up.jpg" alt="" class="card-img">
+          <!-- how to create list-group in card  -->
+
+          <div class="card-footer text-center">
+            <P><b>Price 4rm</b></P>
+          </div>
+
+        <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+        </div>
+        
+      
+      </div>
+      
+    </div>
+   
+
+   <!-- col-2 -->
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+        100 plus
+      </div>
+      <div class="card-body">
+        <img src="./imges/100plis.jpg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 2rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+  
+
+   <!-- col-3 -->
+
+   
+   <div class="col">
+    <div class="card">
+      <div class="card-header h2 ">
+         Coca Cola
+      </div>
+      <div class="card-body">
+        <img src="./imges/cocacola.jpeg" alt="" class="card-img">
+        <!-- how to create list-group in card  -->
+
+        <div class="card-footer text-center">
+          <P><b>Price 3rm</b></P>
+        </div>
+
+      <button class="btn btn-dark text-whit btn-outline-primary mt-1 me-auto" data-bs-toggle="modal" data-bs-target="#order1">Order</button>
+
+
+      </div>
+      
+    
+    </div>
+    
+  </div>
+
+  
+    
+   
+
+
+      
+    </div>
+    <!-- footer -->
+
+    <div class="row my-3">
+      <class="col-md-12">
+         <hr/  >
+      </div>
+
+      <div class="row my-5">
+      
+    
+        <div class="col">
+          <h2> About Us</h2>
+          <p>At EK-24, we're on a mission to share the flavors and traditions of [Culture/Country] with our community. Our story began with a dream of bringing people together through the power of food and culture.</p>
+          <h2>Contact Us</h2>
+          <p>01127821319(whatsapp)</p>
+          <p>Ek-24@gmail.com</p>
+
+     </div>
+     <div class="col">
+       <h2 class="mx-2">Follow Us</h2>
+       <section class="main">
+         <nav>
+             <ul class="snav">
+                 <li><a href=""><i class="fa-brands fa-facebook">   facebook</i></a></li>
+                 <li><a href=""><i class="fa-brands fa-twitter">   twitter</i></a></li>
+                 <li><a href=""><i class="fa-brands fa-whatsapp">   whatsapp</i></a></li>
+                 <li><a href=""><i class="fa-brands fa-instagram">   instagram</i></a></li>
+                 <li><a href=""><i class="fa-brands fa-linkedin">   linkkedin</i></a></li>
+             </ul>
+         </nav>
+     </section>
+
+     </div>
+     <div class="col">
+       <h2>Complan Box</h2>
+       <h5>If have any problem complain us </h5>
+
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">click here</button>
+      
+
+
+
+
+
+     </div>
+      </div>
+
+
+    </div>
+
+    
+       
+
+    
+    </div>
+
+      
+    
+    </div>
+    
+  </div>
+
+   </div>
+
+
+
+   
+  
+
+
+
+
+  
+
+ 
+   
+
+  
+     
+  <!-- target hit by modal   -->
+
+  <div class="modal fade" id="examplemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-bg-dark text-center justify-content-center">
+
+          <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="row">
+                  <div class="col-md-12">forget password</div>
+                </div>
+                
+              </div>
+            </div>
+          </form>
+  
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUp">Sign up</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Log In</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- target sign up  id 2 -->
+
+  <!-- Full screen modal -->
+  <div class=" modal  fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-bg-dark text-center justify-content-center">
+<!-- information -->
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">first name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">last name</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Sabah</option>
+                <option>kalantan</option>
+                <option>pehang</option>
+                <option>Selangor</option>
+                <option>penag</option>
+                <option>tarengganu</option>
+                <option>perlis</option>
+                <option>kualalampur</option>
+                <option>perak</option>
+                <option>sarawak</option>
+                <option>kedah</option>
+                <option>malacca</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  agree with your information
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+  
+          
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- oder target id order  -->
+  <div class=" modal  fade" id="order1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">choose other item</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-bg-dark text-center justify-content-center">
+<!-- information -->
+
+<div class="row my-2">
+  <div class="col-md-12">
+    Rice-Curry
+  </div>
+</div>
+          
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Rice-Curry</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 2 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Chicken-rice</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quantity.</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 3 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Beef-rice</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quantity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 4 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Briyani Chicken</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quantity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 5 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">hyderabad Briyani</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quantity
+    </option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 6-->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Beef Briyani</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="row my-2">
+  <div class="col-md-12">
+    Fast-Food
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Burger</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 8 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Chicken-Nuggte</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 9 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Chicken-Fridge</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+<!-- 10-->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">noodles</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 11 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">French Fry</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 12 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Onion ring</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="row my-2">
+  <div class="col-md-12">
+    Beverage
+  </div>
+</div>
+
+<!-- 13 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">cocacola</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 14 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">7up</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quanity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<!-- 15 -->
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">100 plus</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Quantity</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+
+  
+          
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirm order</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <!--modal for sms   -->
+   
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Complain Box</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+ 
+
+ 
+  
+ 
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

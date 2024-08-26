@@ -1,0 +1,15 @@
+.kaka {
+  background: linear-gradient(to top right, black, blue, black);
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  background-color: black !important;
+}/*# sourceMappingURL=style.css.map */
